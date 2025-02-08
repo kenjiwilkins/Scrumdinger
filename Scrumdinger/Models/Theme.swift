@@ -9,7 +9,6 @@ import SwiftUI
 
 
 enum Theme: String {
-    case bubblegum
     case buttercup
     case indigo
     case lavender
@@ -28,19 +27,18 @@ enum Theme: String {
     
     var accentColor: Color {
         switch self {
-        case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
+        case .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
         case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
     var mainColor: Color {
             switch self {
-            case .bubblegum: return Color(red: 1.0, green: 0.8, blue: 0.9)
             case .buttercup: return Color(red: 1.0, green: 0.9, blue: 0.4)
             case .indigo: return Color(red: 0.4, green: 0.0, blue: 0.9)
             case .lavender: return Color(red: 0.9, green: 0.8, blue: 1.0)
             case .magenta: return Color(red: 1.0, green: 0.0, blue: 1.0)
             case .navy: return Color(red: 0.0, green: 0.0, blue: 0.5)
-            case .orange: return Color(red: 1.0, green: 0.6, blue: 0.0)
+            case .orange: return .orange
             case .oxblood: return Color(red: 0.4, green: 0.0, blue: 0.0)
             case .periwinkle: return Color(red: 0.8, green: 0.8, blue: 1.0)
             case .poppy: return Color(red: 1.0, green: 0.1, blue: 0.1)
@@ -49,7 +47,7 @@ enum Theme: String {
             case .sky: return Color(red: 0.4, green: 0.7, blue: 1.0)
             case .tan: return Color(red: 0.9, green: 0.8, blue: 0.6)
             case .teal: return Color(red: 0.0, green: 0.5, blue: 0.5)
-            case .yellow: return Color(red: 1.0, green: 1.0, blue: 0.0)
+            case .yellow: return .yellow
             }
         }
 }
