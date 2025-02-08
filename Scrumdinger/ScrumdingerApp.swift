@@ -13,7 +13,7 @@ struct ScrumdingerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MeetingView_Previews()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
